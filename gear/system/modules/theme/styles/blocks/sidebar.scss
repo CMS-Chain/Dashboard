@@ -1,0 +1,112 @@
+#sidebar {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 280px;
+    @include linear-gradient(180deg, $light, $snow);
+    .inner {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -20px;
+        padding-right: 20px;
+        overflow: auto;
+        .logo {
+            display: table;
+            margin: 52px auto;
+            img {
+                display: block;
+                width: 60px;
+            }
+        }
+        nav {
+            padding: 0 40px;
+            & > ul {
+                & > li {
+                    margin: 0 0 20px 0;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        display: block;
+                        position: relative;
+                        padding: 0 0 0 40px;
+                    }
+                    & > a {
+                        font-size: 18px;
+                        line-height: 28px;
+                        color: $textColorLight;
+                        .icon {
+                            position: absolute;
+                            left: 0;
+                            top: 2px;
+                            width: 24px;
+                            height: 24px;
+                            svg {
+                                display: block;
+                                max-width: 20px;
+                                max-height: 20px;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                opacity: .8;
+                                stroke: $textColorLight;
+                                @include translate(-50%, -50%);
+                                * {
+                                    stroke: $textColorLight;
+                                }
+                            }
+                        }
+                    }
+                    &.active {
+                        & > a {
+                            color: $dark;
+                            .icon {
+                                svg {
+                                    stroke: $dark;
+                                    opacity: 1;
+                                    * {
+                                        stroke: $dark;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ul {
+                        padding: 8px 0 4px 0;
+                        li {
+                            margin: 12px 0 0 0;
+                            a {
+                                line-height: 20px;
+                                font-size: 16px;
+                                color: $textColor;
+                                &:before {
+                                    content: '';
+                                    width: 8px;
+                                    height: 8px;
+                                    position: absolute;
+                                    border-radius: 50%;
+                                    top: 6px;
+                                    left: 8px;
+                                    display: block;
+                                    background: $textColor;
+                                }
+                            }
+                            &.active {
+                                a {
+                                    color: $textColor;
+                                    &:before {
+                                        background: $primary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

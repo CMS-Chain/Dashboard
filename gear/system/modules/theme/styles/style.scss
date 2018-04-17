@@ -1,0 +1,42 @@
+
+// Variables
+
+@import 'vars';
+
+// Mixins
+
+@import 'mixins/color';
+@import 'mixins/grid';
+@import 'mixins/responsive';
+@import 'mixins/utils';
+
+// Base
+
+@import 'base/reset';
+@import 'base/base';
+
+// Components
+
+@import 'components/typography';
+@import 'components/grid';
+@import 'components/forms';
+@import 'components/selects';
+@import 'components/paginations';
+@import 'components/buttons';
+@import 'components/helper';
+
+// Blocks
+
+@import 'blocks/sidebar';
+@import 'blocks/main';
+
+body {
+    background: $snow;
+}
+
+#gear {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 0 0 280px;
+}

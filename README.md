@@ -1,4 +1,4 @@
-# Gear CMS
+# Dashboard Crypto.
 Currently heavily WIP.
 
 ## Requirements
@@ -15,4 +15,4 @@ Currently heavily WIP.
 * [Medoo](https://github.com/catfan/Medoo)
 * ...
 
-_Structure is inspired by [Pagekit](http://pagekit.com/)_
+_Structure is inspired (pagekit/)_

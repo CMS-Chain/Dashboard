@@ -1,2 +1,18 @@
-# Dashboard
-Dashboard for Crypto Chain.
+# Dashboard Crypto.
+Currently heavily WIP.
+
+## Requirements
+
+*  PHP Version >= 5.6
+*  PDO (MySQL 5.5, ...)
+
+## Resources
+
+* [Framy CSS](http://www.framycss.org/)
+* [Vue.js](http://vuejs.org/)
+* [axios](https://github.com/axios/axios)
+* [Twig](http://twig.sensiolabs.org/)
+* [Medoo](https://github.com/catfan/Medoo)
+* ...
+
+_Structure is inspired (pagekit/)_
